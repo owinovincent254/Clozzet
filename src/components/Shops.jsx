@@ -6,7 +6,6 @@ import ladies from "../assets/images/ladies.png";
 function Shops(){
     return(
         <div className="container mx-auto">
-            <h2 className="flex justify-center items-center mx-auto text-6xl mt-6 mb-6 pt-10" >Featured Collection</h2>
             <div className="grid grid-cols-2 grid-rows-[200px_200px_200px] gap-3" >
 
         <Shop icon={mens} featured="Mens Collection" bgColor="bg-[#F0EFEF] row-span-2"/>

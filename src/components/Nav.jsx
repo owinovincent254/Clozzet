@@ -1,22 +1,25 @@
 import logo from "../assets/images/logo.svg";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
 function Nav() {
   return (
     <div className="container mx-auto flex justify-between items-center capitalize">
       <div>
-        <ul className="ul flex justify-between gap-2 items-center py-4">
-          <img src={logo} alt="Clozzet Nav Logo" className="w-40" />
-          <li className="hidden md:block">Home</li>
+        <ul className="ul flex justify-between gap-8 items-center py-4">
+          <Link to="/">
+            <img src={logo} alt="Clozzet Nav Logo" className="w-40" />
+          </Link>
+         <Link to="/"> <li className="hidden md:block">Home</li></Link>
           <li className="hidden md:block">About Us</li>
-          <li className="hidden md:block">Shop</li>
+          <Link to="/shop">  <li className="hidden md:block">Shop</li></Link>
         </ul>
       </div>
       <div>
-        <ul className="ul flex justify-between items-center gap-2 py-4">
-          <li>
+        <ul className="ul flex justify-between items-center gap-8 py-4">
+        <Link to="/cart"> <li>
             <AiOutlineShoppingCart size={25} />
-          </li>
+          </li></Link>
           <li>Sign Up</li>
           <button className="py-2 px-6 rounded-full border-2 border-black">
             Log In

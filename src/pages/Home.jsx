@@ -1,8 +1,11 @@
 import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import TopCategories from "../components/TopCategories";
-import Footer from "../components/Footer";
+import FeaturedCollections from "../components/FeaturedCollections";
 import Shops from "../components/Shops"
+import Footer from "../components/Footer";
+
+
 function Home() {
   return (
     <div>
@@ -11,6 +14,7 @@ function Home() {
         <Hero />
         <TopCategories/>
         
+        <FeaturedCollections/>
         <Shops/>
         <Footer/>
         

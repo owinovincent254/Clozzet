@@ -9,7 +9,7 @@ import sweater from "../assets/images/sweater.png";
 function TopCategories() {
   return (
     <div className="container mx-auto ">
-      <h2 className="flex justify-center m-5  text-5xl">
+      <h2 className="text-center font-bold text-3xl my-10">
         Top Categories
       </h2>
       <div className="flex justify-between">
